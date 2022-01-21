@@ -21,11 +21,11 @@ jobs:
         with:
           node-version: '14.x'
 
-      - name: Installing my packages
-        run: npm ci
+      - name: Installing packages
+        run: npm install -g yarn && yarn install --frozen-lockfile
 
-      - name: Build my App
-        run: npm run build && npm run export && touch ./out/.nojekyll
+      - name: Export app
+        run: yarn build && yarn export && touch ./out/.nojekyll
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.0
