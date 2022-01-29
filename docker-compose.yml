@@ -13,5 +13,4 @@ services:
     image: nginx:latest
     volumes:
       - ./conf.d/proxy.conf:/etc/nginx/nginx.conf:ro
-    ports:
-      - "3000:80"
+
