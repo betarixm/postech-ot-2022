@@ -337,3 +337,17 @@
     max-width: initial !important;
   }
 }
+
+.notion-page-scroller > * {
+  transition: all 1s;
+  animation: fadein 1s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -35,3 +35,15 @@ body {
   height: 1.2em !important;
   width: 1.2em !important;
 }
+
+.fade-up{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 0.7s all ease !important;
+}
+
+.fade-up.active{
+  transform: translateY(0);
+  opacity: 1;
+}
