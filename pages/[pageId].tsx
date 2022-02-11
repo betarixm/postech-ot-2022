@@ -15,7 +15,7 @@ export const getStaticProps = async (context) => {
         }
       }
     }
-    if (['10'].includes(rawPageId)) {
+    if (rawPageId.length < 32) {
       return {
         props: {
           error: {
