@@ -15,7 +15,7 @@ export const getStaticProps = async (context) => {
         }
       }
     }
-    if (rawPageId.length !== 32) {
+    if (rawPageId.length < 32) {
       return {
         props: {
           error: {

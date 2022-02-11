@@ -78,6 +78,16 @@ export const NotionPage: React.FC<types.PageProps> = ({
   pageId
 }) => {
   const router = useRouter()
+  React.useEffect(() => {
+    const url = document.querySelector(
+      '.notion-collection-row-body span.notion-property.notion-property-url a.notion-link'
+    )?.innerHTML
+    if (url?.startsWith('https://ot.postech.ac.kr')) {
+      const rest = url.split('https://ot.postech.ac.kr').filter((x) => x)[0]
+      router.replace(rest).then()
+    }
+  }, [])
+
   const lite = useSearchParam('lite')
 
   const params: any = {}
