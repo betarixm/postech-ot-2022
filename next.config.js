@@ -46,5 +46,6 @@ module.exports = withBundleAnalyzer({
       "class-15": "https://postech-ac-kr.zoom.us/j/93768977884?pwd=R1FmUnc3RUdFVmh4TWJhbHNZeVFOZz09",
       "class-15-open": "https://postech-ac-kr.zoom.us/j/91480393360?pwd=WDh3TkthZkhuQmkzVTd4TktPaHQ2QT09",
     }
-  }
+  },
+  staticPageGenerationTimeout: 60 * 10,
 })

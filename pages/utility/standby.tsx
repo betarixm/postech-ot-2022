@@ -352,7 +352,7 @@ const Schedules: Schedule[] = [
   },
   {
     begin: new Date(Date.parse('2022-02-17T22:00:00+09:00')),
-    title: '수고하셨습니다~! 👏',
+    title: '수고하셨습니다~! 🎉',
     subtitle: 'null'
   }
 ]
