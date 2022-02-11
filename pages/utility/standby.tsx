@@ -152,7 +152,7 @@ const Schedules: Schedule[] = [
   },
   {
     begin: new Date(Date.parse('2022-02-15T15:10:00+09:00')),
-    title: '새준위 영상 상영 (1)',
+    title: <span>새준위 영상 상영:<br/>{"<나는 잘나가는 새내기다>"}</span>,
     subtitle: 'main'
   },
   {
@@ -220,7 +220,7 @@ const Schedules: Schedule[] = [
   },
   {
     begin: new Date(Date.parse('2022-02-16T15:20:00+09:00')),
-    title: '새준위 영상 상영 (2)',
+    title: '새준위 영상 상영: <S.M.P.>',
     subtitle: 'main'
   },
   {
@@ -305,7 +305,7 @@ const Schedules: Schedule[] = [
   },
   {
     begin: new Date(Date.parse('2022-02-17T16:40:00+09:00')),
-    title: '새준위 영상 상영 (3)',
+    title: <span>새준위 영상 상영:<br/>{"<베어포닉스의 인간 vs 포스텍>"}</span>,
     subtitle: 'main'
   },
   {
