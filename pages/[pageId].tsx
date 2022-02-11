@@ -15,17 +15,17 @@ export const getStaticProps = async (context) => {
         }
       }
     }
-    if (rawPageId.length < 32) {
-      return {
-        props: {
-          error: {
-            message: `Not found "${rawPageId}"`,
-            statusCode: 404
-          }
-        },
-        revalidate: 10
-      }
-    }
+    // if (rawPageId.length < 32) {
+    //   return {
+    //     props: {
+    //       error: {
+    //         message: `Not found "${rawPageId}"`,
+    //         statusCode: 404
+    //       }
+    //     },
+    //     revalidate: 10
+    //   }
+    // }
     const props = await resolveNotionPage(domain, rawPageId)
 
     return { props, revalidate: 10 }
