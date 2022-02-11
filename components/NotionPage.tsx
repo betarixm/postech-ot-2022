@@ -86,7 +86,10 @@ export const NotionPage: React.FC<types.PageProps> = ({
     if (url?.startsWith('https://ot.postech.ac.kr')) {
       const rest = url.split('https://ot.postech.ac.kr').filter((x) => x)[0]
       router.replace(rest).then()
-    } else if (url?.startsWith('https://poniverse.yoonha.dev')) {
+    } else if (
+      url?.startsWith('https://poniverse.yoonha.dev') ||
+      url?.startsWith('https://ot-theme.postech.ac.kr')
+    ) {
       router.replace(url).then()
     }
   }, [])
