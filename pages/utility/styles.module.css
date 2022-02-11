@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "KOHI Baeum";
+  src: url("/font/KOHIBaeumOTF.otf");
+}
+
+@font-face {
+  font-family: "KOHI Nanum";
+  src: url("/font/KOHINnumOTF_Bold.otf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "KOHI Nanum";
+  src: url("/font/KOHINnumOTF_Light.otf");
+  font-weight: normal;
+}
+
+.container {
+  position: relative;
+  word-break: keep-all;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/assets/standby-background.svg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+.heading {
+  font-family: "KOHI Baeum", sans-serif;
+  font-size: 10vh;
+  color: white;
+  filter: drop-shadow(0 0 1vh #0002);
+  text-align: center;
+  margin-bottom: 3vh;
+  padding-top: 8vh;
+}
+
+.speaker {
+  font-family: "KOHI Nanum", sans-serif;
+  font-size: 3vh;
+  color: white;
+  filter: drop-shadow(0 0 0.5vh #0003);
+  margin-bottom: 5vh;
+}
+
+
+.subtitle {
+  font-family: "KOHI Nanum", sans-serif;
+  font-size: 4.5vh;
+  color: white;
+  font-weight: bold;
+  filter: drop-shadow(0 0 0.5vh #0003);
+  margin-bottom: 1vh;
+}
+
+.interval {
+  font-family: "KOHI Nanum", sans-serif;
+  font-size: 3vh;
+  color: white;
+  filter: drop-shadow(0 0 0.5vh #0003);
+  margin-bottom: 4vh;
+}
+
+
+.navigator {
+  position: absolute;
+  bottom: 10vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.navigator span {
+  font-family: "KOHI Nanum", sans-serif;
+  font-size: 2.5vh;
+  color: white;
+  padding-top: 0.3vh;
+}
+
+.navigator button {
+  margin-right: 1vh;
+  margin-left: 1vh;
+  appearance: none;
+  background: transparent;
+  border: 0;
+  font-size: 3vh;
+  color: white;
+}
