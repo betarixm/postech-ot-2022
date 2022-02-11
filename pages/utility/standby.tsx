@@ -152,7 +152,13 @@ const Schedules: Schedule[] = [
   },
   {
     begin: new Date(Date.parse('2022-02-15T15:10:00+09:00')),
-    title: <span>새준위 영상 상영:<br/>{"<나는 잘나가는 새내기다>"}</span>,
+    title: (
+      <span>
+        새준위 영상 상영:
+        <br />
+        {'<나는 잘나가는 새내기다>'}
+      </span>
+    ),
     subtitle: 'main'
   },
   {
@@ -305,7 +311,13 @@ const Schedules: Schedule[] = [
   },
   {
     begin: new Date(Date.parse('2022-02-17T16:40:00+09:00')),
-    title: <span>새준위 영상 상영:<br/>{"<베어포닉스의 인간 vs 포스텍>"}</span>,
+    title: (
+      <span>
+        새준위 영상 상영:
+        <br />
+        {'<베어포닉스의 인간 vs 포스텍>'}
+      </span>
+    ),
     subtitle: 'main'
   },
   {
@@ -341,7 +353,7 @@ const Schedules: Schedule[] = [
   {
     begin: new Date(Date.parse('2022-02-17T22:00:00+09:00')),
     title: '수고하셨습니다~! 👏',
-    subtitle: 'main'
+    subtitle: 'null'
   }
 ]
 
@@ -364,9 +376,7 @@ const StandBy: NextPage = (props) => {
   return (
     <div className={styles.container}>
       <div className={styles.heading}>{Schedules[schedule].title}</div>
-      <div className={styles.speaker}>
-        {Schedules[schedule].speaker}
-      </div>
+      <div className={styles.speaker}>{Schedules[schedule].speaker}</div>
       <div className={styles.subtitle}>{subtitle}</div>
       <div className={styles.interval}>
         {Schedules[schedule].begin.toLocaleTimeString().slice(0, -3)} ~{' '}
